@@ -1,0 +1,103 @@
+{
+  "uid" : "76d0ff0e29a36ef3",
+  "name" : "test_phones_on_contact_view_page",
+  "fullName" : "test.contact.test_phones#test_phones_on_contact_view_page",
+  "historyId" : "554fa7479d35c8d6241f53f0609da275",
+  "time" : {
+    "start" : 1635087278788,
+    "stop" : 1635087279078,
+    "duration" : 290
+  },
+  "status" : "broken",
+  "statusMessage" : "IndexError: list index out of range",
+  "statusTrace" : "app = <fixture.application.Application object at 0x000001F7E28FE130>\n\n    def test_phones_on_contact_view_page(app):\n>       contact_from_view_page = app.contact.get_contact_from_view_page(0)\n\ntest\\contact\\test_phones.py:12: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <fixture.contact.ContactHelper object at 0x000001F7E28FEBB0>, index = 0\n\n    def get_contact_from_view_page(self, index):\n        wd = self.app.wd\n        self.open_contact_view_by_index(index)\n        text = wd.find_element_by_id(\"content\").text\n        split = re.split(\"\\n\", text, maxsplit=15)\n        fullname = split[0]\n        split1 = re.split((\" \"), fullname, maxsplit=2)\n        name = split1[0]\n>       lastname = split1[2]\nE       IndexError: list index out of range\n\nfixture\\contact.py:217: IndexError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "stop",
+    "time" : {
+      "start" : 1635087230696,
+      "stop" : 1635087230696,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1635087278769,
+      "stop" : 1635087278787,
+      "duration" : 18
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "stop::fin",
+    "time" : {
+      "start" : 1635087292696,
+      "stop" : 1635087293362,
+      "duration" : 666
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test.contact"
+  }, {
+    "name" : "suite",
+    "value" : "test_phones"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-VASELE"
+  }, {
+    "name" : "thread",
+    "value" : "8888-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.contact.test_phones"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "76d0ff0e29a36ef3.json",
+  "parameterValues" : [ ]
+}

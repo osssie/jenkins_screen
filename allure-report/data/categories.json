@@ -1,0 +1,93 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert (0 + 1) == 0\n +  where 0 = len([])\n +  and   0 = len([])",
+      "children" : [ {
+        "name" : "test_add_contact_to_group",
+        "uid" : "a7d513319625a1e8",
+        "parentUid" : "d0e02aeeeea92c7d0b49d9423c3cf7c0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1635087258374,
+          "stop" : 1635087259347,
+          "duration" : 973
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d0e02aeeeea92c7d0b49d9423c3cf7c0"
+    }, {
+      "name" : "AssertionError: assert '' == 'mary@a.cto'\n  - mary@a.cto",
+      "children" : [ {
+        "name" : "test_compare_contact_on_viewpage[None:Ivan]",
+        "uid" : "2b3720dfaf19c668",
+        "parentUid" : "08b6273e4de427ac81f45307551d12eb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1635087268022,
+          "stop" : 1635087269523,
+          "duration" : 1501
+        },
+        "flaky" : false,
+        "parameters" : [ "None:Ivan" ]
+      } ],
+      "uid" : "08b6273e4de427ac81f45307551d12eb"
+    }, {
+      "name" : "AssertionError: assert '' == 'ivan@mail.com'\n  - ivan@mail.com",
+      "children" : [ {
+        "name" : "test_compare_contact_on_viewpage[None:Natalia]",
+        "uid" : "89b63291284c87fe",
+        "parentUid" : "e37b17bad3d43d978827b740b4435db8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1635087269558,
+          "stop" : 1635087271025,
+          "duration" : 1467
+        },
+        "flaky" : false,
+        "parameters" : [ "None:Natalia" ]
+      } ],
+      "uid" : "e37b17bad3d43d978827b740b4435db8"
+    }, {
+      "name" : "AssertionError: assert False",
+      "children" : [ {
+        "name" : "test_group_list",
+        "uid" : "e331e719ccaf08d9",
+        "parentUid" : "8d89788b03808d3beec6ddf8e7d75f3d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1635087287991,
+          "stop" : 1635087288466,
+          "duration" : 475
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8d89788b03808d3beec6ddf8e7d75f3d"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "IndexError: list index out of range",
+      "children" : [ {
+        "name" : "test_phones_on_contact_view_page",
+        "uid" : "76d0ff0e29a36ef3",
+        "parentUid" : "cbf21ee610ffd376e0ce643a364ade80",
+        "status" : "broken",
+        "time" : {
+          "start" : 1635087278788,
+          "stop" : 1635087279078,
+          "duration" : 290
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cbf21ee610ffd376e0ce643a364ade80"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}
